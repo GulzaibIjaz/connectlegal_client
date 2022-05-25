@@ -1,0 +1,43 @@
+.testimonials {
+  width: 100%;
+  min-height: 20vh;
+  padding: 20px 0;
+  margin: 8vh 0;
+}
+.testimonials > h1 {
+  font-family: var(--heading-font);
+  color: black;
+  word-spacing: 6px;
+  font-size: 2rem;
+  margin-bottom: 4vh;
+  text-align: center;
+}
+
+.testimonial__container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.testimonial__container > div {
+  background-color: whitesmoke;
+  border-radius: 7px;
+}
+.testimonial__container > div > p {
+  padding: 20px;
+  text-align: justify;
+  width: 20vw;
+}
+.testimonial__container > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial__container > div > div > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.testimonial__container > div > div > h1 {
+  font-size: 1.1rem;
+  margin-top: 3vh;
+}

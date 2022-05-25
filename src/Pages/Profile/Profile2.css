@@ -1,0 +1,457 @@
+.lawyer__profile__page {
+  min-height: 100vh;
+  display: flex;
+  padding: 20px 0;
+  padding-top: 13vh;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  /* background-color: #f7f8fb; */
+}
+.lawyer__profile__page .main__container {
+  flex: 0.7;
+
+  height: 100%;
+  min-height: 100vh;
+  /* background-color: white; */
+
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-left: 10vw; */
+}
+/**** basic info part ***/
+.lawyer__profile__page .main__container .basic__info {
+  margin-top: 4vh;
+  width: 90%;
+  height: 200px;
+  /* border-bottom: 1px solid lightgray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.lawyer__profile__page .main__container .basic__info > .profile__pic {
+  flex: 0.4;
+
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.lawyer__profile__page .main__container .basic__info > .profile__pic > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.basic__info > .personal__info {
+  flex: 0.55;
+
+  padding: 10px;
+  cursor: pointer;
+}
+.name__and__rating {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-bottom: 3vh;
+}
+.basic__info > .personal__info > .name__and__rating > .name {
+  font-size: 1.3rem;
+  font-family: var(--body-font);
+}
+.rating__container {
+  float: right;
+  display: inline;
+}
+.rating__container .MuiSvgIcon-root {
+  color: gold;
+}
+.basic__info > .personal__info > .education,
+.basic__info > .personal__info > .areas__of__practices,
+.basic__info > .personal__info > .bio {
+  font-size: 0.9rem;
+  font-family: var(--body-font);
+  color: #46484b;
+  display: inline-block;
+  width: 40vw;
+  margin-top: -10px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/****************** advance info part ****************/
+.lawyer__profile__page .main__container .advance__info {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+.lawyer__profile__page .main__container .advance__info > div {
+  display: flex;
+  gap: 20px;
+}
+.lawyer__profile__page .main__container .advance__info > div > h1 {
+  font-size: 1rem;
+  width: 15vw;
+}
+.lawyer__profile__page .main__container .advance__info > div > p {
+  font-size: 0.8rem;
+}
+.lawyer__profile__page .main__container .advance__info > div > img {
+  width: 20vw;
+  height: auto;
+}
+/***************  about bio part  **************/
+.lawyer__profile__page .main__container .about {
+  margin: 5vh 20px;
+  border-bottom: 1px solid lightgray;
+}
+.lawyer__profile__page .main__container .about > h1 {
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  word-spacing: 5px;
+}
+.lawyer__profile__page .main__container .about > p {
+  font-size: 0.9rem;
+}
+/*************** educational part ***************/
+.lawyer__profile__page .main__container .educational__info {
+  padding: 5vh 20px;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.lawyer__profile__page .main__container .educational__info > h1 {
+  font-size: 1.3rem;
+  font-family: var(--heading-font);
+  margin-bottom: 4vh;
+}
+.lawyer__profile__page .main__container .educational__info > div > h3 {
+  font-size: 1rem;
+}
+.lawyer__profile__page .main__container .educational__info > div > p {
+  font-size: 0.8rem;
+}
+/*************** professional part ***************/
+.lawyer__profile__page .main__container .professional__info {
+  padding: 5vh 20px;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.lawyer__profile__page .main__container .professional__info > h1 {
+  font-size: 1.3rem;
+  font-family: var(--heading-font);
+  margin-bottom: 4vh;
+}
+.lawyer__profile__page .main__container .professional__info > div > h3 {
+  font-size: 1rem;
+}
+.lawyer__profile__page .main__container .professional__info > div > p {
+  font-size: 0.8rem;
+}
+/*************** portfolio part ***************/
+.lawyer__profile__page .main__container .portfolio {
+  padding: 5vh 20px;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.lawyer__profile__page .main__container .portfolio > h1 {
+  font-size: 1.3rem;
+  font-family: var(--heading-font);
+  margin-bottom: 4vh;
+}
+.lawyer__profile__page .main__container .portfolio > div > h3 {
+  font-size: 1rem;
+}
+.lawyer__profile__page .main__container .portfolio > div > p {
+  font-size: 0.8rem;
+}
+/*** reviews part **/
+.reviews .comment__box {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 50%;
+
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews .heading {
+  /* border-bottom: 1px solid lightgray; */
+  text-align: left;
+  font-size: 1.3rem;
+  padding: 5px 20px;
+  width: 90%;
+  /* margin: 0 5%; */
+  height: 40px;
+  font-family: var(--heading-font);
+  color: black;
+}
+.comments {
+  /* overflow-y: scroll; */
+  height: 40vh;
+  padding: 15px;
+  width: 100%;
+  margin: 0 0%;
+}
+
+.reviews .comment {
+  background-color: rgba(235, 235, 235, 0.767);
+  margin: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  height: max-content;
+}
+
+.reviews .comment__writer {
+  font-size: 19px;
+  text-align: left;
+  margin: 0;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+}
+.reviews .comment__text {
+  text-align: left !important;
+  font-size: 17px !important;
+  display: none;
+  margin: 0 !important;
+  padding: 2px 5px !important;
+  margin-left: 10px;
+  color: black !important;
+}
+
+.reviews .comment.active .comment__text {
+  display: block;
+}
+
+.reviews .review {
+  width: 100%;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 2vh;
+}
+.reviews .review > h4 {
+  color: black;
+  padding: 5px;
+  font-size: 1.1rem;
+
+  text-transform: uppercase;
+}
+.reviews .review > p {
+  color: black;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+.reviews .review > span {
+  position: absolute;
+  bottom: 18px;
+  right: 0;
+  color: black;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+/***  sidebar *****/
+.lawyer__profile__page .sidebar {
+  flex: 0.3;
+  height: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lawyer__profile__page .sidebar .book__apointment__container {
+  background-color: #f7f8fb;
+  padding: 20px;
+  height: max-content;
+  position: fixed;
+  width: 25vw;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 30px rgb(0 0 0 / 4%), 0 1px 4px rgb(0 0 0 / 10%);
+}
+.sidebar .book__apointment__container .heading {
+  width: 100%;
+  text-align: left;
+  font-size: 1.3rem;
+  font-family: var(--heading-font);
+}
+.sidebar .book__apointment__container .body__data {
+  padding: 20px 5px;
+}
+.sidebar .book__apointment__container .body__data > p {
+  font-size: 0.8rem;
+}
+.sidebar .book__apointment__container .appointment__btn {
+  padding: 10px;
+  width: 80%;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  font-family: var(--heading-font);
+  background-color: var(--dark-blue);
+  color: white;
+  outline: 2px solid var(--dark-blue);
+  margin: 3vh 10%;
+}
+.sidebar .book__apointment__container .appointment__btn .MuiSvgIcon-root {
+  color: white;
+  display: inline;
+}
+
+@media (max-width: 980px) {
+  .lawyer__profile__page .main__container {
+    flex: 0.6;
+
+    padding-left: 1vw;
+  }
+  .lawyer__profile__page .sidebar {
+    flex: 0.4;
+  }
+  .lawyer__profile__page .sidebar .book__apointment__container {
+    width: 33vw;
+  }
+}
+@media (max-width: 768px) {
+  .lawyer__profile__page {
+    min-height: 100vh;
+    display: flex;
+    padding: 20px;
+    padding-top: 13vh;
+    width: 100vw;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: #f7f8fb; */
+  }
+  .lawyer__profile__page .main__container {
+    flex: 0.6;
+
+    height: 100%;
+    min-height: 100vh;
+    /* background-color: white; */
+
+    padding: 20px;
+    padding-left: 3vw;
+  }
+  .lawyer__profile__page .sidebar {
+    flex: 0.4;
+    height: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+  }
+  .lawyer__profile__page .sidebar .book__apointment__container {
+    background-color: #f7f8fb;
+    padding: 20px;
+    height: max-content;
+    position: relative;
+    width: 80vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 30px rgb(0 0 0 / 4%), 0 1px 4px rgb(0 0 0 / 10%);
+  }
+  .lawyer__profile__page .main__container .basic__info {
+    margin-top: 4vh;
+    width: 90%;
+    height: max-content;
+    /* border-bottom: 1px solid lightgray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .lawyer__profile__page .main__container .basic__info > .profile__pic {
+    flex: 0.4;
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .lawyer__profile__page .main__container .basic__info > .profile__pic > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .basic__info > .personal__info {
+    flex: 0.55;
+
+    padding: 10px;
+    cursor: pointer;
+  }
+  .name__and__rating {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 3vh;
+    width: 80vw;
+    align-items: center;
+  }
+  .basic__info > .personal__info > .education,
+  .basic__info > .personal__info > .areas__of__practices,
+  .basic__info > .personal__info > .bio {
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+    color: #46484b;
+    display: inline-block;
+    width: 80vw;
+    margin-top: -10px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+  }
+
+  /* .reviews .review {
+    width: 100%;
+    background-color: rgba(0, 128, 128, 0.2);
+    border-bottom: 2px solid white;
+    padding: 10px;
+    position: relative;
+    height: max-content;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .reviews .review > h4 {
+    color: black;
+    padding: 5px;
+    font-size: 1.1rem;
+
+    text-transform: uppercase;
+  }
+  .reviews .review > p {
+    color: black;
+    padding: 5px;
+    font-size: 0.8rem;
+    margin: 0;
+    height: max-content;
+  }
+  .reviews .review > span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: black;
+    padding-bottom: 3px !important;
+    font-size: 0.8rem;
+    height: max-content;
+  } */
+}
